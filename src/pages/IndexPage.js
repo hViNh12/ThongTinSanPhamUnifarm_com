@@ -65,7 +65,7 @@ export default function IndexPage() {
 
         <div className="card image-box">
           <h3>Ảnh sản phẩm</h3>
-          <img src="/1-3860.jpg" alt="Sản phẩm" />
+          <img src="/qr (4).png" alt="Sản phẩm" />
         </div>
       </main>
 
