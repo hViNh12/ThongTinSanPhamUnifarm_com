@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --green: #166534;
+  --green-light: #22c55e;
+  --gray: #f8fafc;
+  --dark: #1e293b;
 }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--gray); color: var(--dark); }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header */
+header {
+  background: var(--green);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+header h1 { font-size: 22px; font-weight: 700; }
+header img { height: 42px; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: white;
+  border-bottom: 4px solid var(--green-light);
+}
+.hero h2 { color: var(--green); font-size: 28px; margin-bottom: 12px; }
+.hero p { font-size: 16px; color: #475569; }
+
+/* Container */
+.container { max-width: 1100px; margin: 40px auto; padding: 0 20px; display: grid; gap: 30px; }
+
+/* Card */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: transform .3s ease;
+}
+.card:hover { transform: translateY(-4px); }
+.card h3 { color: var(--green); font-size: 20px; margin-bottom: 15px; }
+.card p { margin-bottom: 8px; font-size: 15px; }
+
+/* Image showcase */
+.image-box { text-align: center; }
+.image-box img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform .4s ease;
+}
+.image-box img:hover { transform: scale(1.04); }
+
+/* Footer */
+footer {
+  background: var(--green);
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+footer a {
+  color: #bbf7d0;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer a:hover { text-decoration: underline; }
